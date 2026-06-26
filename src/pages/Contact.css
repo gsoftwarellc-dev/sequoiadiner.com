@@ -1,0 +1,131 @@
+.contact-intro {
+  padding: 3rem 1rem 1.5rem;
+  text-align: center;
+}
+
+.contact-intro h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  color: rgb(var(--color-text-primary));
+  margin-bottom: 0.75rem;
+}
+
+.contact-intro p {
+  color: rgb(var(--color-text-secondary));
+  line-height: 1.6;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem 1rem 3rem;
+}
+
+.contact-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: rgb(var(--color-bg-tertiary));
+  border: 1px solid rgb(var(--color-divider));
+}
+
+.contact-detail-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(var(--color-text-primary));
+}
+
+.contact-detail-card h3 svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+  color: rgb(var(--color-brand-primary));
+}
+
+.contact-detail-card a,
+.contact-detail-card address,
+.contact-detail-card p {
+  font-style: normal;
+  color: rgb(var(--color-text-secondary));
+  text-decoration: none;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-detail-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-cta {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--color-brand-primary));
+  color: #fff;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.contact-cta:hover {
+  background-color: rgb(var(--color-brand-dark));
+}
+
+.contact-review {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 3rem 1rem;
+}
+
+.contact-review img {
+  flex: 1 1 20rem;
+  max-width: 24rem;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+.contact-review-text {
+  flex: 1 1 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.contact-review-text h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(var(--color-text-primary));
+}
+
+.contact-review-text p {
+  color: rgb(var(--color-text-secondary));
+  line-height: 1.5;
+}
+
+.contact-review-text .contact-cta {
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .contact-details {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,31 @@
+.call-now-button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: rgb(var(--color-brand-primary));
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.15s ease;
+}
+
+.call-now-button:hover {
+  background-color: rgb(var(--color-brand-dark));
+}
+
+.call-now-button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+.call-now-button span {
+  display: none;
+}

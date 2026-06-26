@@ -1,0 +1,59 @@
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 22rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(var(--color-bg-tertiary));
+  border: 1px solid rgb(var(--color-divider));
+}
+
+.review-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 9999px;
+  background-color: #fff;
+  border: 1px solid rgb(var(--color-divider));
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgb(var(--color-text-secondary));
+}
+
+.review-card-badge svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.review-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(var(--color-text-primary));
+}
+
+.review-card p {
+  color: rgb(var(--color-text-secondary));
+  line-height: 1.5;
+}
+
+.review-card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--color-brand-primary));
+  color: #fff;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.review-card-cta:hover {
+  background-color: rgb(var(--color-brand-dark));
+}

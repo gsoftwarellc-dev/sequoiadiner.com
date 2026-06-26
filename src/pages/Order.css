@@ -1,0 +1,72 @@
+.order-banner {
+  position: relative;
+  width: 100%;
+  min-height: 32rem;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.order-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.order-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 28rem;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  background-color: rgb(var(--color-text-primary));
+  color: #fff;
+  text-align: center;
+}
+
+.order-card h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.order-card > p {
+  color: rgb(214 214 214);
+  line-height: 1.5;
+}
+
+.order-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--color-brand-primary));
+  color: #fff;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.order-cta:hover {
+  background-color: rgb(var(--color-brand-dark));
+}
+
+.order-note {
+  font-size: 0.85rem;
+  color: rgb(170 170 170);
+}
+
+.order-note-link {
+  color: rgb(var(--color-brand-light));
+  text-decoration: underline;
+}

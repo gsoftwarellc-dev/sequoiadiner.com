@@ -1,0 +1,136 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background-color: rgb(var(--color-bg-primary));
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+.navbar-logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-links {
+    display: flex;
+  }
+}
+
+.navbar-link {
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  transition: background-color 0.15s ease;
+}
+
+.navbar-link:hover {
+  background-color: rgb(var(--color-bg-tertiary));
+}
+
+.navbar-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--color-brand-primary));
+  color: rgb(255 255 255);
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.navbar-cta:hover {
+  background-color: rgb(var(--color-brand-dark));
+}
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: rgb(var(--color-text-primary));
+  border-radius: 2px;
+}
+
+.navbar-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem 1.5rem;
+  background-color: rgb(var(--color-bg-primary));
+}
+
+@media (min-width: 768px) {
+  .navbar-mobile-menu {
+    display: none;
+  }
+}
+
+.navbar-mobile-link {
+  padding: 0.75rem 1rem;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.navbar-mobile-link:hover {
+  background-color: rgb(var(--color-bg-tertiary));
+}
+
+.navbar-mobile-cta {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
