@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/images/logo.jpg'
+import logo from '../assets/images/logo.png'
 import './Footer.css'
 
 const FOOTER_LINKS = [
   { to: '/story', label: 'Our Story' },
-  { to: '/page/pdf-menu', label: 'Menu' },
-  { to: '/page/catering', label: 'Catering' },
+  { to: '/page/pdf-menu', label: 'PDF Menu' },
   { to: '/page/contact', label: 'Contact' },
   { to: '/page/private-events--restaurant-buyout', label: 'Private Events / Restaurant Buyout' },
 ]
@@ -107,6 +106,21 @@ function Footer() {
                   <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor" />
                 </svg>
                 Instagram
+              </a>
+              <a
+                href="https://www.facebook.com/sequoiadiner"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="View Facebook page (opens in new tab)"
+              >
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="2" />
+                  <path
+                    d="M14.5 8.5h-1.25c-.55 0-1 .45-1 1V11h2.1l-.3 2h-1.8v5h-2v-5H8.5v-2h1.75V9.2c0-1.6 1.05-2.7 2.65-2.7H14.5v2Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Facebook
               </a>
             </div>
           </div>

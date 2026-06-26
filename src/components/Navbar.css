@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 30;
-  background-color: rgb(var(--color-bg-primary));
+  background-color: rgb(var(--color-brand-primary));
 }
 
 .navbar-inner {
@@ -43,7 +43,7 @@
   font-family: var(--font-secondary);
   font-weight: 500;
   font-size: 0.95rem;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 0.5rem;
   white-space: nowrap;
@@ -51,7 +51,7 @@
 }
 
 .navbar-link:hover {
-  background-color: rgb(var(--color-bg-tertiary));
+  background-color: rgb(255 255 255 / 0.12);
 }
 
 .navbar-cta {
@@ -61,8 +61,8 @@
   padding: 0.6rem 1rem;
   margin-left: 0.5rem;
   border-radius: 0.5rem;
-  background-color: rgb(var(--color-brand-primary));
-  color: rgb(255 255 255);
+  background-color: #ffffff;
+  color: rgb(var(--color-brand-primary));
   font-family: var(--font-secondary);
   font-weight: 500;
   font-size: 0.95rem;
@@ -71,7 +71,7 @@
 }
 
 .navbar-cta:hover {
-  background-color: rgb(var(--color-brand-dark));
+  background-color: rgb(230 230 230);
 }
 
 .navbar-toggle {
@@ -98,7 +98,7 @@
   display: block;
   width: 22px;
   height: 2px;
-  background-color: rgb(var(--color-text-primary));
+  background-color: #ffffff;
   border-radius: 2px;
 }
 
@@ -107,7 +107,7 @@
   flex-direction: column;
   gap: 0.25rem;
   padding: 0.5rem 1rem 1.5rem;
-  background-color: rgb(var(--color-bg-primary));
+  background-color: rgb(var(--color-brand-primary));
 }
 
 @media (min-width: 768px) {
@@ -120,13 +120,13 @@
   padding: 0.75rem 1rem;
   font-family: var(--font-secondary);
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 0.5rem;
 }
 
 .navbar-mobile-link:hover {
-  background-color: rgb(var(--color-bg-tertiary));
+  background-color: rgb(255 255 255 / 0.12);
 }
 
 .navbar-mobile-cta {

@@ -4,7 +4,6 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Order from './pages/Order'
-import Catering from './pages/Catering'
 import Story from './pages/Story'
 import PrivateEvents from './pages/PrivateEvents'
 import Placeholder from './pages/Placeholder'
@@ -19,7 +18,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/order" element={<Order />} />
           <Route path="/story" element={<Story />} />
-          <Route path="/page/catering" element={<Catering />} />
           <Route path="/page/contact" element={<Contact />} />
           <Route path="/page/pdf-menu" element={<Placeholder title="Menu" />} />
           <Route path="/page/private-events--restaurant-buyout" element={<PrivateEvents />} />

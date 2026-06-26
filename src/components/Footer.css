@@ -40,6 +40,13 @@
   }
 }
 
+.footer-logo {
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--color-brand-primary));
+}
+
 .footer-logo img {
   height: 48px;
   width: auto;

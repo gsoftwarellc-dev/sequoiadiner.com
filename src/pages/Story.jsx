@@ -7,23 +7,25 @@ function Story() {
       <div className="story-text">
         <h1>Welcome to Sequoia Diner</h1>
         <p>
-          A quaint and bright neighborhood staple nestled in the heart of Oakland, we blend a charming retro
-          flair with a passionate, modern approach to classic comfort food, creating a warm and welcoming
-          space where the community can gather, connect, and enjoy a truly exceptional meal.
+          A charming retro neighborhood diner in the heart of Oakland's Laurel District, Sequoia Diner has
+          been bringing people together over honest, delicious food since 2015. Our goal is simple to create
+          a welcoming place where friends, families, and neighbors can slow down, connect, and enjoy a great
+          meal.
         </p>
         <p>
-          We believe that great food starts from scratch. That is why our kitchen is dedicated to crafting as
-          much as possible by hand. From our signature housemade sausages and freshly baked breads to our
-          artisanal jams and delicate morning pastries, everything we serve is prepared daily using carefully
-          sourced, high-quality ingredients.
+          Our kitchen prepares as much as possible from scratch, including our house-made breads, jams,
+          sausages, scones, coffee cakes, and cookies. We proudly use as many organic, local, and seasonal
+          ingredients as possible, letting quality products and thoughtful cooking shine in every dish.
         </p>
         <p>
-          Whether you are stepping into our vibrant, retro-inspired dining room for your morning coffee or
-          grabbing a hearty midday meal, we treat every guest like family. At Sequoia Diner, it's not just
-          about serving breakfast and lunch—it's about honoring time-tested culinary traditions and sharing
-          our love for food with the incredible Oakland community.
+          Whether you're stopping in for a cup of organic coffee, gathering for weekend brunch, enjoying a
+          handcrafted cocktail, or pairing lunch with a thoughtfully selected wine, you'll always find warm
+          hospitality and food made with care.
         </p>
-        <p className="story-callout">Come on in, slide into a booth, and taste the difference that housemade quality makes!</p>
+        <p className="story-callout">
+          At Sequoia Diner, every guest is treated like a neighbor, and every meal is made to be shared,
+          enjoyed, and remembered. We can't wait to welcome you to our table.
+        </p>
       </div>
       <img
         className="story-image"

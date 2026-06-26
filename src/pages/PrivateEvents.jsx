@@ -14,6 +14,9 @@ function PrivateEvents() {
             birthdays, showers, team breakfasts, and other gatherings—give us a call and we'll help you plan
             the details, from the menu to the timing.
           </p>
+          <p>
+            Private events and restaurant buyouts are available in the evening, after our daytime service.
+          </p>
           <a className="private-events-cta" href="tel:+15104823719">
             Call to Book Your Event
           </a>

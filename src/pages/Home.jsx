@@ -1,8 +1,7 @@
 import Hero from '../components/Hero'
 import GallerySection from '../components/GallerySection'
 import RandomGallery from '../components/RandomGallery'
-import CateringCTA from '../components/CateringCTA'
-import GoogleReviewButton from '../components/GoogleReviewButton'
+import ReviewsSection from '../components/ReviewsSection'
 import LocationMap from '../components/LocationMap'
 import chickenFriedSteakImg from '../assets/gallery/chicken-fried-steak-grits.jpg'
 import hotSaucesImg from '../assets/gallery/house-hot-sauces.jpg'
@@ -90,8 +89,6 @@ function Home() {
         ]}
       />
 
-      <CateringCTA />
-
       <RandomGallery
         title="Snapshot of Flavorful Moments"
         description="Browse our gallery to see hearty breakfast spreads, evening treats, and cool diner vibes that make every visit memorable."
@@ -99,7 +96,7 @@ function Home() {
       />
 
       <section className="container" style={{ padding: '1rem 1rem 3rem' }}>
-        <GoogleReviewButton />
+        <ReviewsSection />
       </section>
 
       <LocationMap />

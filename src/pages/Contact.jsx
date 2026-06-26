@@ -1,8 +1,6 @@
-import reviewImg from '../assets/gallery/poached-eggs-hash-toast.jpg'
 import LocationMap from '../components/LocationMap'
+import ReviewsSection from '../components/ReviewsSection'
 import './Contact.css'
-
-const GOOGLE_REVIEW_URL = 'https://www.google.com/maps/search/?api=1&query=Sequoia+Diner+Oakland'
 
 function Contact() {
   return (
@@ -62,22 +60,56 @@ function Contact() {
           <p>Monday: 9:00 AM – 2:00 PM</p>
           <p>Tuesday: Closed</p>
         </div>
+
+        <div className="contact-detail-card">
+          <h3>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M7 3.5 18.5 9l-4.3 1.7c-.4.15-.7.45-.85.85L11.7 16 7 3.5Z"
+                stroke="currentColor"
+                strokeWidth="1.6"
+                strokeLinejoin="round"
+              />
+            </svg>
+            Follow Us
+          </h3>
+          <div className="contact-social-links">
+            <a
+              href="https://www.instagram.com/sequoia_diner/"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="View Instagram page (opens in new tab)"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.8" />
+                <circle cx="12" cy="12" r="4.5" stroke="currentColor" strokeWidth="1.8" />
+                <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor" />
+              </svg>
+              Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/sequoiadiner"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="View Facebook page (opens in new tab)"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.8" />
+                <path
+                  d="M14.5 8.5h-1.25c-.55 0-1 .45-1 1V11h2.1l-.3 2h-1.8v5h-2v-5H8.5v-2h1.75V9.2c0-1.6 1.05-2.7 2.65-2.7H14.5v2Z"
+                  fill="currentColor"
+                />
+              </svg>
+              Facebook
+            </a>
+          </div>
+        </div>
       </section>
 
       <LocationMap />
 
       <section className="contact-review container">
-        <img
-          src={reviewImg}
-          alt="A breakfast plate with poached eggs over hash, toast, shredded carrots, and arugula at Sequoia Diner"
-        />
-        <div className="contact-review-text">
-          <h2>Share Your Experience And Help Others Discover Us!</h2>
-          <p>Your feedback helps others discover Sequoia Diner. If you enjoyed your visit, please share it.</p>
-          <a className="contact-cta" href={GOOGLE_REVIEW_URL} target="_blank" rel="noreferrer noopener">
-            Rate Us On Google
-          </a>
-        </div>
+        <ReviewsSection />
       </section>
     </>
   )

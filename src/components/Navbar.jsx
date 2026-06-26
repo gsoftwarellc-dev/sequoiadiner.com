@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/images/logo.jpg'
+import logo from '../assets/images/logo.png'
 import './Navbar.css'
 
 const NAV_LINKS = [
   { to: '/', label: 'Home' },
   { to: '/story', label: 'Our Story' },
-  { to: '/page/pdf-menu', label: 'Menu' },
-  { to: '/page/catering', label: 'Catering' },
+  { to: '/page/pdf-menu', label: 'PDF Menu' },
   { to: '/page/contact', label: 'Contact' },
   { to: '/page/private-events--restaurant-buyout', label: 'Private Events / Restaurant Buyout' },
 ]
