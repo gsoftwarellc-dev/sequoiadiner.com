@@ -8,6 +8,7 @@ import Story from './pages/Story'
 import PrivateEvents from './pages/PrivateEvents'
 import Placeholder from './pages/Placeholder'
 import CallNowButton from './components/CallNowButton'
+import ScrollToTopButton from './components/ScrollToTopButton'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       </main>
       <Footer />
       <CallNowButton />
+      <ScrollToTopButton />
     </>
   )
 }

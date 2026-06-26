@@ -13,7 +13,7 @@ const REVIEWS = [
     name: 'Adrian Arenas',
     date: '1 week ago',
     rating: 5,
-    text: 'The waffle might be the best one I’ve had',
+    text: 'My first time! Really enjoyed this elevated diner. The prosciutto toast was INCREDIBLE and the mezcal bloody the best!',
     color: '#E8710A',
   },
   {
@@ -27,7 +27,7 @@ const REVIEWS = [
     name: 'Joanne Scott',
     date: '1 month ago',
     rating: 5,
-    text: 'Great food and service, a little noisy with all the hard surfaces.',
+    text: 'Sequoia Diner is such a great spot and absolutely worth the visit.',
     color: '#188038',
   },
   {
