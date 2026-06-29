@@ -1,6 +1,7 @@
 import './ReviewsSection.css'
 
 const GOOGLE_REVIEW_URL = 'https://www.google.com/maps/search/?api=1&query=Sequoia+Diner+Oakland'
+const YELP_URL = 'https://www.yelp.com/biz/sequoia-diner-oakland'
 
 const RATING_SUMMARY = {
   label: 'Excellent',
@@ -29,27 +30,6 @@ const REVIEWS = [
     rating: 5,
     text: 'Sequoia Diner is such a great spot and absolutely worth the visit.',
     color: '#188038',
-  },
-  {
-    name: 'Zoey Huynh',
-    date: '1 month ago',
-    rating: 5,
-    text: 'Food was delicious and I was so happy to be able to get a gluten free breakfast option.',
-    color: '#D93025',
-  },
-  {
-    name: 'miles skuba',
-    date: '2 months ago',
-    rating: 5,
-    text: 'Great little dinner with a Fantastic eggs Benedict made on fresh in house made bread.',
-    color: '#9334E6',
-  },
-  {
-    name: 'Brigitte Davila',
-    date: '2 months ago',
-    rating: 5,
-    text: 'The food was uniformly excellent - we both enjoyed our breakfasts which provided plenty of food to fuel us until evening. Ample portions and great flavor.',
-    color: '#129EAF',
   },
 ]
 
@@ -127,14 +107,24 @@ function ReviewsSection() {
           <span className="reviews-header-divider">|</span>
           <span className="reviews-header-count">{RATING_SUMMARY.count}</span>
         </div>
-        <a
-          className="reviews-header-cta"
-          href={GOOGLE_REVIEW_URL}
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Write a review
-        </a>
+        <div className="reviews-header-ctas">
+          <a
+            className="reviews-header-cta"
+            href={GOOGLE_REVIEW_URL}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Write a review on Google
+          </a>
+          <a
+            className="reviews-header-cta reviews-header-cta-yelp"
+            href={YELP_URL}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Read reviews on Yelp
+          </a>
+        </div>
       </div>
 
       <div className="reviews-grid">

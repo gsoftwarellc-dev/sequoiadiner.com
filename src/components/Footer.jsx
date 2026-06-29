@@ -5,6 +5,9 @@ import './Footer.css'
 const FOOTER_LINKS = [
   { to: '/story', label: 'Our Story' },
   { to: '/page/pdf-menu', label: 'PDF Menu' },
+  { to: '/page/gift-cards', label: 'Gift Cards' },
+  { href: 'https://yelp.to/-p8uUwUI92', label: 'Reserve a Table' },
+  { href: 'https://yelp.to/PQK1mikxyZ', label: 'Join the Waitlist' },
   { to: '/page/contact', label: 'Contact' },
   { to: '/page/private-events--restaurant-buyout', label: 'Private Events / Restaurant Buyout' },
 ]
@@ -13,6 +16,8 @@ const HOURS = [
   { label: 'Monday', value: '9:00 AM – 2:00 PM' },
   { label: 'Wednesday – Sunday', value: '8:00 AM – 2:00 PM' },
 ]
+
+const TOAST_URL = 'https://order.toasttab.com/online/sequoia-diner-new-3719-macarthur-blvd-oakland-ca-94619'
 
 function Footer() {
   return (
@@ -24,16 +29,22 @@ function Footer() {
           </Link>
 
           <nav className="footer-links" aria-label="Footer navigation">
-            {FOOTER_LINKS.map((link) => (
-              <Link key={link.to} to={link.to}>
-                {link.label}
-              </Link>
-            ))}
+            {FOOTER_LINKS.map((link) =>
+              link.href ? (
+                <a key={link.href} href={link.href} target="_blank" rel="noreferrer noopener">
+                  {link.label}
+                </a>
+              ) : (
+                <Link key={link.to} to={link.to}>
+                  {link.label}
+                </Link>
+              ),
+            )}
           </nav>
 
-          <Link to="/order" className="footer-cta">
+          <a href={TOAST_URL} target="_blank" rel="noreferrer noopener" className="footer-cta">
             Order online
-          </Link>
+          </a>
         </div>
 
         <div className="footer-divider" />

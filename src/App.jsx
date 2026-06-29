@@ -6,7 +6,8 @@ import Contact from './pages/Contact'
 import Order from './pages/Order'
 import Story from './pages/Story'
 import PrivateEvents from './pages/PrivateEvents'
-import Placeholder from './pages/Placeholder'
+import Menu from './pages/Menu'
+import GiftCards from './pages/GiftCards'
 import CallNowButton from './components/CallNowButton'
 import ScrollToTopButton from './components/ScrollToTopButton'
 
@@ -20,7 +21,8 @@ function App() {
           <Route path="/order" element={<Order />} />
           <Route path="/story" element={<Story />} />
           <Route path="/page/contact" element={<Contact />} />
-          <Route path="/page/pdf-menu" element={<Placeholder title="Menu" />} />
+          <Route path="/page/pdf-menu" element={<Menu />} />
+          <Route path="/page/gift-cards" element={<GiftCards />} />
           <Route path="/page/private-events--restaurant-buyout" element={<PrivateEvents />} />
         </Routes>
       </main>

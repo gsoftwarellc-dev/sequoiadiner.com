@@ -15,7 +15,25 @@ function GallerySection({ title, description, images }) {
               <img src={item.image} alt={item.alt} loading="lazy" />
             </figure>
           )
-          return item.link ? (
+          if (!item.link) {
+            return figure
+          }
+
+          const isExternal = item.link.startsWith('http')
+
+          return isExternal ? (
+            <a
+              key={item.alt}
+              href={item.link}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="gallery-item-link"
+              aria-label={`Order: ${item.caption ?? item.alt}`}
+            >
+              {figure}
+              {item.caption && <span className="gallery-caption">{item.caption}</span>}
+            </a>
+          ) : (
             <Link
               key={item.alt}
               to={item.link}
@@ -25,8 +43,6 @@ function GallerySection({ title, description, images }) {
               {figure}
               {item.caption && <span className="gallery-caption">{item.caption}</span>}
             </Link>
-          ) : (
-            figure
           )
         })}
       </div>

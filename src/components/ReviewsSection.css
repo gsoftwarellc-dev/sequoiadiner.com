@@ -41,6 +41,12 @@
   color: rgb(var(--color-text-secondary));
 }
 
+.reviews-header-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .reviews-header-cta {
   display: inline-flex;
   align-items: center;
@@ -58,6 +64,16 @@
 
 .reviews-header-cta:hover {
   background-color: rgb(var(--color-text-primary));
+  color: #fff;
+}
+
+.reviews-header-cta-yelp {
+  border-color: #d32323;
+  color: #d32323;
+}
+
+.reviews-header-cta-yelp:hover {
+  background-color: #d32323;
   color: #fff;
 }
 

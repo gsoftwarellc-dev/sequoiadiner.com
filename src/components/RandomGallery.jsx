@@ -1,66 +1,34 @@
-import chickenFriedSteakImg from '../assets/gallery/chicken-fried-steak-grits.jpg'
-import veggieEggBowlImg from '../assets/gallery/veggie-egg-bowl.jpg'
-import hotSaucesImg from '../assets/gallery/house-hot-sauces.jpg'
-import waffleImg from '../assets/gallery/waffle-berry-cream.jpg'
-import pecanStickyBunsImg from '../assets/gallery/pecan-sticky-buns.jpg'
-import veggieHashImg from '../assets/gallery/summer-veggie-hash-poached-eggs.jpg'
-import friedRiceBowlImg from '../assets/gallery/fried-rice-egg-bowl.jpg'
-import roastedVeggiePlateImg from '../assets/gallery/roasted-veggie-egg-plate.jpg'
-import meatballGritsImg from '../assets/gallery/meatball-grits-bowl.jpg'
-import bltSandwichImg from '../assets/gallery/blt-sandwich.jpg'
-import tortelliniImg from '../assets/gallery/tortellini-peas-carrots.jpg'
-import raspberryCrumbCakeImg from '../assets/gallery/raspberry-crumb-cake.jpg'
-import breakfastPlateImg from '../assets/gallery/breakfast-plate-sausage-eggs.jpg'
-import cocktailDiningRoomImg from '../assets/gallery/cocktail-dining-room.jpg'
-import beetMangoSaladImg from '../assets/catering/beet-mango-salad.jpg'
-import englishBreakfastImg from '../assets/catering/english-breakfast-plate.jpg'
-import mimosaFlightImg from '../assets/catering/mimosa-flight.jpg'
-import poachedEggSpreadImg from '../assets/catering/poached-egg-breakfast-spread.jpg'
-import salmonSaladImg from '../assets/catering/salmon-salad.jpg'
-import sesameCookiesImg from '../assets/catering/sesame-cookies.jpg'
-import flowerArrangementImg from '../assets/story/flower-arrangement.jpg'
-import barShelfBottlesImg from '../assets/bar/bar-shelf-bottles-counter.jpg'
-import barShelfHotSauceImg from '../assets/bar/bar-shelf-hot-sauce.jpg'
-import fullBackBarImg from '../assets/bar/full-back-bar-bottles.jpg'
-import latteArtImg from '../assets/bar/latte-art-leaf.jpg'
-import lavenderLemonadeImg from '../assets/bar/lavender-lemonade-mimosa.jpg'
-import margaritaTequilaImg from '../assets/bar/margarita-with-tequila-bottle.jpg'
-import orangeSpritzImg from '../assets/bar/orange-spritz-cocktail.jpg'
-import redJuiceCoolersImg from '../assets/bar/red-juice-coolers.jpg'
-import spicyMargaritaImg from '../assets/bar/spicy-margarita-jalapeno.jpg'
+import eggsBenedictImg from '../assets/updated/eggs-benedict.jpg'
+import breakfastSandwichImg from '../assets/updated/breakfast-sandwich.jpg'
+import bltaSandwichImg from '../assets/updated/blta-sandwich.jpg'
+import biscuitAndGravyImg from '../assets/updated/biscuit-and-gravy.jpg'
+import chilaquilesImg from '../assets/updated/chilaquiles.jpg'
+import eggsAndHamPlateImg from '../assets/updated/eggs-and-ham-plate.jpg'
+import houseSourdoughImg from '../assets/updated/house-sourdough-bread.jpg'
+import diningRoomCounterImg from '../assets/updated/dining-room-counter.jpg'
+import sausageAndEggsPlateImg from '../assets/updated/sausage-and-eggs-plate.jpg'
+import melonBurrataSaladImg from '../assets/updated/melon-burrata-salad.jpg'
+import beetAndPoachedEggSaladImg from '../assets/updated/beet-and-poached-egg-salad.jpg'
+import stickyBunImg from '../assets/updated/sticky-bun.jpg'
+import shrimpAndGritsImg from '../assets/updated/shrimp-and-grits.jpg'
+import belgianWaffleImg from '../assets/updated/belgian-waffle.jpg'
 import './GallerySection.css'
 
 const ALL_PHOTOS = [
-  { image: chickenFriedSteakImg, alt: 'Crispy fried chicken over cheese grits with a cucumber radish salad.' },
-  { image: veggieEggBowlImg, alt: 'A bowl of roasted vegetables topped with a poached egg.' },
-  { image: hotSaucesImg, alt: 'Two house-made hot sauce bottles on the bar counter.' },
-  { image: waffleImg, alt: 'A golden waffle topped with berry whipped cream.' },
-  { image: pecanStickyBunsImg, alt: 'A tray of freshly baked pecan sticky buns.' },
-  { image: veggieHashImg, alt: 'A summer veggie hash topped with poached eggs and herb pesto.' },
-  { image: friedRiceBowlImg, alt: 'A bowl of fried rice topped with a crispy fried egg.' },
-  { image: roastedVeggiePlateImg, alt: 'A plate of roasted carrots and beets with avocado and a fried egg.' },
-  { image: meatballGritsImg, alt: 'Meatballs in marinara sauce over cheese grits.' },
-  { image: bltSandwichImg, alt: 'A stacked BLT sandwich with crispy hash browns.' },
-  { image: tortelliniImg, alt: 'Tortellini with peas, carrots, and edible flowers.' },
-  { image: raspberryCrumbCakeImg, alt: 'A slice of raspberry crumb cake on a vintage plate.' },
-  { image: breakfastPlateImg, alt: 'A breakfast plate with sausage, poached eggs, and toast.' },
-  { image: cocktailDiningRoomImg, alt: 'A craft cocktail on a table in the dining room.' },
-  { image: beetMangoSaladImg, alt: 'A salad with mango, beets, pomegranate, and goat cheese.' },
-  { image: englishBreakfastImg, alt: 'A plate with black pudding, baked beans, bacon, and ham.' },
-  { image: mimosaFlightImg, alt: 'A flight of three mimosas in different fruit flavors.' },
-  { image: poachedEggSpreadImg, alt: 'A breakfast spread with poached eggs, toast, and bacon.' },
-  { image: salmonSaladImg, alt: 'A seared salmon salad with greens and roasted vegetables.' },
-  { image: sesameCookiesImg, alt: 'Two stacked sesame seed cookies on a patterned plate.' },
-  { image: flowerArrangementImg, alt: 'A fresh flower arrangement inside the dining room.' },
-  { image: barShelfBottlesImg, alt: 'The back-bar liquor shelf with a coffee mug on the counter.' },
-  { image: barShelfHotSauceImg, alt: 'House-made hot sauce bottles with the bar shelf in the background.' },
-  { image: fullBackBarImg, alt: 'The full back-bar display of liquor bottles and glassware.' },
-  { image: latteArtImg, alt: 'A latte with leaf-pattern foam art.' },
-  { image: lavenderLemonadeImg, alt: 'A lavender lemonade next to a sparkling mimosa.' },
-  { image: margaritaTequilaImg, alt: 'A salt-rimmed margarita next to a bottle of tequila.' },
-  { image: orangeSpritzImg, alt: 'A bright orange spritz cocktail with a lime garnish.' },
-  { image: redJuiceCoolersImg, alt: 'Two glasses of a vivid red juice cooler drink.' },
-  { image: spicyMargaritaImg, alt: 'A spicy margarita with a jalapeño garnish and salt rim.' },
+  { image: eggsBenedictImg, alt: 'Two eggs Benedict on biscuits with bacon, hollandaise, and a side salad.' },
+  { image: breakfastSandwichImg, alt: 'A breakfast sandwich with egg and cheese on a biscuit, served with a side salad.' },
+  { image: bltaSandwichImg, alt: 'A toasted BLT with avocado sandwich, served with potato salad.' },
+  { image: biscuitAndGravyImg, alt: 'A biscuit smothered in sausage gravy with a dusting of paprika.' },
+  { image: chilaquilesImg, alt: 'Chilaquiles with fried eggs, beans, avocado, and pickled onions.' },
+  { image: eggsAndHamPlateImg, alt: 'A plate with poached eggs, grilled ham, hash browns, arugula, and toast.' },
+  { image: houseSourdoughImg, alt: 'Two loaves of golden house-made sourdough bread on a cutting board.' },
+  { image: diningRoomCounterImg, alt: 'The bright dining room and counter at Sequoia Diner with guests seated.' },
+  { image: sausageAndEggsPlateImg, alt: 'A sausage patty with two fried eggs, hash browns, arugula, and toast.' },
+  { image: melonBurrataSaladImg, alt: 'A watermelon and burrata salad with arugula, walnuts, and balsamic drizzle.' },
+  { image: beetAndPoachedEggSaladImg, alt: 'Roasted beets topped with poached eggs, radish, and pickles.' },
+  { image: stickyBunImg, alt: 'A pecan sticky bun on a vintage floral plate.' },
+  { image: shrimpAndGritsImg, alt: 'Shrimp and grits topped with fried eggs and chimichurri.' },
+  { image: belgianWaffleImg, alt: 'A Belgian waffle topped with whipped cream and powdered sugar.' },
 ]
 
 function getRandomPhotos(count) {
@@ -70,6 +38,10 @@ function getRandomPhotos(count) {
 
 function RandomGallery({ title, description, count = 12 }) {
   const photos = getRandomPhotos(count)
+
+  if (photos.length === 0) {
+    return null
+  }
 
   return (
     <section className="gallery-section container">
