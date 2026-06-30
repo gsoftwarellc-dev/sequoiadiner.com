@@ -14,6 +14,7 @@ const FOOTER_LINKS = [
 
 const HOURS = [
   { label: 'Monday', value: '9:00 AM – 2:00 PM' },
+  { label: 'Tuesday', value: 'Closed' },
   { label: 'Wednesday – Sunday', value: '8:00 AM – 2:00 PM' },
 ]
 
@@ -105,6 +106,7 @@ function Footer() {
             </h3>
             <div className="footer-contact-line">
               <a href="tel:+15104823719">(510) 482-3719</a>
+              <a href="mailto:info@sequoiadiner.com">info@sequoiadiner.com</a>
               <a
                 href="https://www.instagram.com/sequoia_diner/"
                 target="_blank"

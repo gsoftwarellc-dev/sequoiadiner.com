@@ -27,6 +27,7 @@ function Contact() {
             Phone
           </h3>
           <a href="tel:+15104823719">(510) 482-3719</a>
+          <a href="mailto:info@sequoiadiner.com">info@sequoiadiner.com</a>
         </div>
 
         <div className="contact-detail-card">

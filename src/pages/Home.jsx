@@ -18,8 +18,8 @@ function Home() {
       <Hero />
 
       <GallerySection
-        title="All-Day Brunch, Every Day"
-        description="Classic breakfast and brunch favorites served all day, every day."
+        title="All-Day Brunch"
+        description="Fresh, classic breakfast and brunch favorites served all day."
         images={[
           {
             image: chickenFriedSteakImg,
